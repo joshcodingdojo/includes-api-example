@@ -6,5 +6,8 @@
   <body>
     {% include 'partials/nav.html' %}
     <h1>index</h1>
+    {% for pokemon in results%}
+      <h3>{{ pokemon.name }}</h3>
+    {% endfor %}
   </body>
 </html>
