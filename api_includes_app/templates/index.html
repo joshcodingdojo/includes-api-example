@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-    {% include 'partials/head.html' %}
+  {% include 'partials/head.html' %}
     <title>Document</title>
   </head>
   <body>
     {% include 'partials/nav.html' %}
     <h1>index</h1>
-    {% for pokemon in results%}
-      <h3>{{ pokemon.name }}</h3>
+    {% for i in pokemon %}
+      <h3>{{ i.name }}</h3>
+      <a href="{{i.url}}">{{ i.url }}</a>
+      <hr>
     {% endfor %}
   </body>
 </html>
